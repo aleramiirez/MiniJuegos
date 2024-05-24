@@ -1,5 +1,9 @@
 # Plataforma de Minijuegos
 
+<div align="center">
+  <img src="https://github.com/aleramiirez/MiniJuegos/assets/121113496/65feed69-1219-454c-bc27-61f1af682380" alt="Proyecto" width="500"/>
+</div>
+
 ## Instalación
 
 Para instalar y ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
