@@ -67,6 +67,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Game Space Invaders");
     }
 
+    public void FoxyBros()
+    {
+        SceneManager.LoadScene("Main Menu Foxy Bros");
+    }
+
     public void CloseSettings()
     {
         settingPanel.SetActive(false);

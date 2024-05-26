@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 /** Clase que maneja los eventos de los botones **/
 public class MainMenuManager : MonoBehaviour
 {
+
+    /** Referencia al GameObject settingPanel **/
+    public GameObject settingPanel;
+
     /** Carga la escena "Pong Game" **/
     public void ChargePongScene()
     {
@@ -15,6 +19,15 @@ public class MainMenuManager : MonoBehaviour
     public void ChargeMainScene()
     {
         SceneManager.LoadScene("Menu Pong");
+    }
+
+    public void Setting()
+    {
+        settingPanel.SetActive(true);
+    }
+    public void CloseSettings()
+    {
+        settingPanel.SetActive(false);
     }
 
     /** Caraga la escena "Main Menu" **/

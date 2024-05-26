@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
     /** Referencia del jugador **/
     public Player player;
 
+    /** Referencia al GameObject settingPanel **/
+    public GameObject settingPanel;
+
     private void Start()
     {
         /** Llama a la funcion Pausa() **/
@@ -111,8 +114,14 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 
-    public void ShowSettings()
+    public void Setting()
     {
-        
+        settingPanel.SetActive(true);
     }
+
+    public void CloseSettings()
+    {
+        settingPanel.SetActive(false);
+    }
+
 }

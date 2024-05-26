@@ -28,6 +28,18 @@ public class Options : MonoBehaviour
         settingMenu.SetActive(true);
     }
 
+    public void CloseSettings()
+    {
+        if (!startMenu.activeSelf)
+        {
+            Time.timeScale = 1f;
+            settingMenu.SetActive(false);
+        } else
+        {
+            settingMenu.SetActive(false);
+        }
+    }   
+
     public void Exit()
     {
         SceneManager.LoadScene("Main Menu");
