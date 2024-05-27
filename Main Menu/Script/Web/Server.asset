@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e2e71af1a320e46a3ad4dc8114029e, type: 3}
+  m_Name: Server
+  m_EditorClassIdentifier: 
+  server: http://localhost/minijuegos
+  services:
+  - name: Login
+    url: login.php
+    parameters:
+    - username
+    - password
+  - name: Check
+    url: check.php
+    parameters: []
+  - name: Register
+    url: register.php
+    parameters:
+    - username
+    - password
+  inUse: 0
+  response:
+    codigo: 205
+    mensaje: "Inicio de sesi\xF3n correcto"
+    respuesta: '{"user_id":5,"username":"alberto","password":"abcd1234","nivel":1}'

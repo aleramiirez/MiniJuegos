@@ -72,6 +72,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Main Menu Foxy Bros");
     }
 
+    public void Profile()
+    {
+        SceneManager.LoadScene("Profile");
+    }
+
     public void CloseSettings()
     {
         settingPanel.SetActive(false);
