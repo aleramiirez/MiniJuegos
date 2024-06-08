@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 176108970}
   - component: {fileID: 176108969}
   - component: {fileID: 176108971}
+  - component: {fileID: 176108972}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -265,6 +266,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 978169705}
+--- !u!114 &176108972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176108968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1599ae3745214143a51b0fd66afdbf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelUpURL: http://4.176.1.225:8080/api/v1/users/levelUp
 --- !u!1 &241533036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,6 +1446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1065448322}
+  levelUpApi: {fileID: 176108972}
 --- !u!114 &1065448322
 MonoBehaviour:
   m_ObjectHideFlags: 0

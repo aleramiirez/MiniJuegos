@@ -9,9 +9,22 @@ using System.IO;
 public class ProfileManager : MonoBehaviour
 {
     public TextMeshProUGUI usernameText;
+
     public TextMeshProUGUI levelText;
+
     public Image profilePhoto;
+
     public GameObject photoPanel;
+
+    public GameObject searchPanel;
+
+    public GameObject userPanel;
+
+    public GameObject inputSearchUser;
+
+    public GameObject buttonSearchUser;
+
+    public GameObject profilePanel;
 
     // Clave para guardar la ruta de la foto de perfil en PlayerPrefs
     private const string ProfilePhotoKey = "ProfilePhoto";
@@ -102,16 +115,31 @@ public class ProfileManager : MonoBehaviour
 
     public void EditPhoto()
     {
+        inputSearchUser.SetActive(false);
+        buttonSearchUser.SetActive(false);
         photoPanel.SetActive(true);
     }
 
     public void ClosePhotoPanel()
     {
         photoPanel.SetActive(false);
+        inputSearchUser.SetActive(true);
+        buttonSearchUser.SetActive(true);
     }
 
     public void Exit()
     {
-        SceneManager.LoadScene("Main Menu");
+        profilePanel.SetActive(false);
+    }
+
+    public void CloseSearchPanel()
+    {
+        searchPanel.SetActive(false);
+        userPanel.SetActive(true);
+    }
+
+    public void GoLogin()
+    {
+        SceneManager.LoadScene("Login");
     }
 }

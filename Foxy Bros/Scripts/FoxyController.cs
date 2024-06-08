@@ -37,6 +37,8 @@ public class FoxyController : MonoBehaviour
     /** Referencia al sonido de salto **/
     public AudioClip jumpSound;
 
+    public LevelUpApi levelUpApi;
+
     void Update()
     {
         /** Iguala la variable al eje horizontal **/
@@ -157,6 +159,9 @@ public class FoxyController : MonoBehaviour
         {
             /** Llama a la funcion FinishLevel **/
             manager.FinishLevel();
+
+            /** Llama al metodo de subir de nivel de la api */
+            levelUpApi.LevelUp();
         }
     }
 
@@ -195,5 +200,8 @@ public class FoxyController : MonoBehaviour
 
         /** Reproduce el sonido **/
         audioS.PlayOneShot(hurtSound, 1f);
+
+        /** Aplica el movimiento llamando a la función Move del script de FoxyMovement **/
+        movement.Move(0);
     }
 }

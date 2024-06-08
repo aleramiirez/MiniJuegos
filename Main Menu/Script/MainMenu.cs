@@ -11,6 +11,13 @@ public class MainMenu : MonoBehaviour
 
     public GameObject settingPanel;
 
+    public GameObject profilePanel;
+
+    private void Start()
+    {
+        Time.timeScale = 1.0f;
+    }
+
     public void Games()
     {
         gamesPanel1.SetActive(true);
@@ -74,7 +81,7 @@ public class MainMenu : MonoBehaviour
 
     public void Profile()
     {
-        SceneManager.LoadScene("Profile");
+        profilePanel.SetActive(true);
     }
 
     public void CloseSettings()

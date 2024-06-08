@@ -379,11 +379,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
   m_PrefabInstance: {fileID: 526495283}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &51290168 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-  m_PrefabInstance: {fileID: 1324928724}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &55626863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,7 +1960,6 @@ Transform:
   - {fileID: 37038119}
   - {fileID: 537298920}
   - {fileID: 651056244}
-  - {fileID: 51290168}
   - {fileID: 1852304319}
   - {fileID: 460924344}
   - {fileID: 566809283}
@@ -18940,63 +18934,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
---- !u!1001 &1324928724
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 285472541}
-    m_Modifications:
-    - target: {fileID: 2924191646803224291, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_Name
-      value: Spikes (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.255041
-      objectReference: {fileID: 0}
-    - target: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.07939917
-      objectReference: {fileID: 0}
-    - target: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.08389591
-      objectReference: {fileID: 0}
-    - target: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
 --- !u!4 &1330757119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6048245984067720174, guid: 82b9b12ec6f629f4095430060f1cc3dc, type: 3}
@@ -22619,7 +22556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 1196868021}
-  levelTimer: 50
+  levelTimer: 100
   timeText: {fileID: 1087214635}
 --- !u!1001 &1875630341
 PrefabInstance:
@@ -23114,7 +23051,7 @@ Transform:
   m_GameObject: {fileID: 1998815313}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.72, y: 1.504, z: 0}
+  m_LocalPosition: {x: 6.72, y: 2.047, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23965,6 +23902,10 @@ PrefabInstance:
       propertyPath: levelEndPanel
       value: 
       objectReference: {fileID: 672332611}
+    - target: {fileID: 4185672107738830110, guid: e03413eda6d73e14cada02837d135bfc, type: 3}
+      propertyPath: levelUpURL
+      value: http://4.176.1.225:8080/api/v1/users/levelUp
+      objectReference: {fileID: 0}
     - target: {fileID: 8024394940746534852, guid: e03413eda6d73e14cada02837d135bfc, type: 3}
       propertyPath: m_Name
       value: Game Manger
@@ -23974,6 +23915,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03413eda6d73e14cada02837d135bfc, type: 3}
+--- !u!114 &3034956792104446764 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4185672107738830110, guid: e03413eda6d73e14cada02837d135bfc, type: 3}
+  m_PrefabInstance: {fileID: 3034956792104446763}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1599ae3745214143a51b0fd66afdbf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3111450818693299104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24026,21 +23978,13 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 1196868021}
+    - target: {fileID: 7273775423901789369, guid: 42bd49f8f62f25e4f93f42be14d6ccec, type: 3}
+      propertyPath: levelUpApi
+      value: 
+      objectReference: {fileID: 3034956792104446764}
     - target: {fileID: 7775148030025203691, guid: 42bd49f8f62f25e4f93f42be14d6ccec, type: 3}
       propertyPath: m_Name
       value: Foxy
-      objectReference: {fileID: 0}
-    - target: {fileID: 8968488884131431645, guid: 42bd49f8f62f25e4f93f42be14d6ccec, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8968488884131431645, guid: 42bd49f8f62f25e4f93f42be14d6ccec, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8968488884131431645, guid: 42bd49f8f62f25e4f93f42be14d6ccec, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

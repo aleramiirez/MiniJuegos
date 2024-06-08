@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2651929558933761635}
   - component: {fileID: 3301037297938650172}
+  - component: {fileID: 4185672107738830110}
   m_Layer: 0
   m_Name: Game Manger
   m_TagString: Untagged
@@ -52,3 +53,19 @@ MonoBehaviour:
   timeToRespawn: 2
   isGameOver: 0
   isLevelFinished: 0
+  lifeText: {fileID: 0}
+  levelEndPanel: {fileID: 0}
+  levelEndText: {fileID: 0}
+--- !u!114 &4185672107738830110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8024394940746534852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1599ae3745214143a51b0fd66afdbf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelUpURL: http://localhost:8080/api/v1/users/levelUp

@@ -273,6 +273,7 @@ MonoBehaviour:
   gemSound: {fileID: 8300000, guid: 665e7a6276663364a9ea0ff13fd44235, type: 3}
   hurtSound: {fileID: 8300000, guid: 61a47adcf4e25b24787b4ef3757cc079, type: 3}
   jumpSound: {fileID: 8300000, guid: a518be0af4ff8cd42a160f97f52b12c1, type: 3}
+  levelUpApi: {fileID: 0}
 --- !u!95 &3620847992784160390
 Animator:
   serializedVersion: 5

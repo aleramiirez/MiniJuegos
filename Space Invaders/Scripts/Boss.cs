@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -33,6 +34,8 @@ public class Boss : MonoBehaviour
     public Vector3 rightEdge;
 
     public GameObject startMenu;
+
+    public LevelUpApi levelUpApi;
 
     private void Start()
     {
@@ -102,8 +105,9 @@ public class Boss : MonoBehaviour
                 /** Si el jefe se queda sin vidas, se desactiva **/
                 if (life <= 0)
                 {
-                    gameObject.SetActive(false);
-                    startMenu.SetActive(true);
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+                    levelUpApi.LevelUp();
                 }
             }
         }

@@ -19014,6 +19014,10 @@ PrefabInstance:
       propertyPath: levelEndPanel
       value: 
       objectReference: {fileID: 384214985}
+    - target: {fileID: 4185672107738830110, guid: e03413eda6d73e14cada02837d135bfc, type: 3}
+      propertyPath: levelUpURL
+      value: http://4.176.1.225:8080/api/v1/users/levelUp
+      objectReference: {fileID: 0}
     - target: {fileID: 8024394940746534852, guid: e03413eda6d73e14cada02837d135bfc, type: 3}
       propertyPath: m_Name
       value: Game Manger
@@ -19023,6 +19027,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03413eda6d73e14cada02837d135bfc, type: 3}
+--- !u!114 &3034956792104446764 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4185672107738830110, guid: e03413eda6d73e14cada02837d135bfc, type: 3}
+  m_PrefabInstance: {fileID: 3034956792104446763}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1599ae3745214143a51b0fd66afdbf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3111450818693299104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19099,6 +19114,10 @@ PrefabInstance:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 8300000, guid: a518be0af4ff8cd42a160f97f52b12c1, type: 3}
+    - target: {fileID: 7273775423901789369, guid: 42bd49f8f62f25e4f93f42be14d6ccec, type: 3}
+      propertyPath: levelUpApi
+      value: 
+      objectReference: {fileID: 3034956792104446764}
     - target: {fileID: 7273775423901789369, guid: 42bd49f8f62f25e4f93f42be14d6ccec, type: 3}
       propertyPath: cherrySound
       value: 

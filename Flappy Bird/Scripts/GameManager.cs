@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
     /** Referencia al GameObject settingPanel **/
     public GameObject settingPanel;
 
+    public LevelUpApi levelUpApi;
+
     private void Start()
     {
         /** Llama a la funcion Pausa() **/
@@ -94,6 +96,12 @@ public class GameManager : MonoBehaviour
         
         /** Modifica el texto de la puntuacion **/
         scoreText.text = score.ToString();
+
+        // Verifica si la puntuación es un múltiplo de 50
+        if (score % 30 == 0)
+        {
+            levelUpApi.LevelUp();
+        }
     }
 
     /** Finaliza la partida **/
